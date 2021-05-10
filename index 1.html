@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapremina valjka</title>
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: coral;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        h2 {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        hr {
+            margin-top: 3px;
+            margin-bottom: 5px;
+        }
+
+        form {
+            border: 2px solid white;
+            padding: 15px;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form name="formcalc">
+        <h2>Izračunaj zapreminu valjka</h2>
+        <hr> <br> <br>
+        Unesite poluprečnik: <input type="text" name="txtnum1">
+        <br>
+        <br>
+        Unesite visinu: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtnum2">
+        <br>
+        <br>
+        Rezultat:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            type="text" name="txtres">
+        <br>
+        <br>
+
+        <input type="button" value="Izračunaj" onClick="sumValues()">
+
+    </form>
+
+    <script type="text/javascript">
+        function sumValues() {
+            var num1, num2, constPI, res;
+
+            num1 = Number(document.formcalc.txtnum1.value);
+            num2 = Number(document.formcalc.txtnum2.value);
+            constPI = 3.14;
+            res = num1 * num2 * constPI
+            document.formcalc.txtres.value = res;
+
+        }
+
+    </script>
+</body>
+
+</html>
