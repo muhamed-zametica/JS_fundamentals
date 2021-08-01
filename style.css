@@ -1,0 +1,18 @@
+.wrapper {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.krug {
+position: absolute;
+width: 100px;
+height: 100px;
+background-color: #a3a5a1;
+transition: all 1s ease;
+top: 0;
+left: 0;
+
+}
+
